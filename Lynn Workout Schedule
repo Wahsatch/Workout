@@ -1,0 +1,31 @@
+# Training program
+
+name = input('What is your name?\n')
+print('Hi, %s.' % name)
+
+timeline = int(input('What is your timeline in weeks for your training?\n'))
+
+print('Okay,', timeline, 'weeks.')
+
+increase = int(input('What percentage do you want to increase your training time by each week?\n'))
+
+print('Okay, you would like to increase your training time by', increase, 'percent each week.')
+
+starting_distance = int(input('What is your starting distance in miles?\n'))
+
+print('Okay, your starting distance is', starting_distance, 'miles.')
+
+print('Okay, you start your first week with', starting_distance, ' and then here are your distances for the next' timeline - 1, 'weeks.')
+
+# increase per week equation
+
+output = (starting_distance * increase / 100 + starting_distance)
+new_output = (output * increase / 100 + output)
+
+
+c = 1
+while c != timeline:
+  print(new_output)
+  new_output += increase / 100 * new_output
+  
+  c = c + 1
