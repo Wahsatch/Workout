@@ -7,7 +7,7 @@ timeline = int(input('What is your timeline in weeks for your training?\n'))
 
 print('Okay,', timeline, 'weeks.')
 
-increase = int(input('What percentage do you want to increase your training time by each week?\n'))
+increase = int(input('What percentage do you want to increase your training distance by each week?\n'))
 
 print('Okay, you would like to increase your training time by', increase, 'percent each week.')
 
