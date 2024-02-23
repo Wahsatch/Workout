@@ -15,7 +15,7 @@ starting_distance = int(input('What is your starting distance in miles?\n'))
 
 print('Okay, your starting distance is', starting_distance, 'miles.')
 
-print('Okay, you start your first week with', starting_distance, ' and then here are your distances for the next' timeline - 1, 'weeks.')
+print('Okay, you start your first week with', starting_distance, ' and then here are your distances for the next', timeline - 1, 'weeks.')
 
 # increase per week equation
 
